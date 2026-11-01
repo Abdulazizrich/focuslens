@@ -1,0 +1,83 @@
+{
+  "name": "focuslens",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FocusLens — local camera-assisted focus workspace",
+  "author": "FocusLens",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1",
+    "build": "node scripts/prepare-vision.mjs && node scripts/prepare-licenses.mjs && next build --webpack && node scripts/prepare-offline.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts && node --test tests/*.test.cjs",
+    "desktop": "electron .",
+    "package:win": "electron-builder --win nsis --x64",
+    "dist": "npm run build && npm run package:win",
+    "preview": "node scripts/preview.cjs",
+    "test:desktop": "node scripts/desktop-smoke.cjs"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@mediapipe/tasks-vision": "0.10.32",
+    "@techstark/opencv-js": "4.12.0-release.1",
+    "chart.js": "^4.5.0",
+    "dexie": "^4.0.11",
+    "lottie-react": "^2.4.1",
+    "lucide-react": "^0.468.0",
+    "next": "16.4.0",
+    "react": "^19.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.2.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "electron": "44.7.0",
+    "electron-builder": "26.15.3",
+    "playwright": "^1.56.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "build": {
+    "appId": "uz.focuslens.desktop",
+    "productName": "FocusLens",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "electron/**/*",
+      "out/**/*",
+      "package.json",
+      "!node_modules/**/*"
+    ],
+    "extraResources": [{ "from": "extension", "to": "browser-extension" }, { "from": "README.md", "to": "README.md" }],
+    "asar": true,
+    "electronDist": "node_modules/electron/dist",
+    "npmRebuild": false,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signExecutable": false,
+      "artifactName": "FocusLens-Setup-${version}-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

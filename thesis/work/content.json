@@ -1,0 +1,40 @@
+{
+  "section": "5-sho‘ba",
+  "title": "FOCUSLENS TIZIMIDA DIQQATNI KUZATISH VA SHAXSIY MA’LUMOTLARNI HIMOYALASH",
+  "author": "1-bosqich magistranti Xolmurodov Abdulaziz Dilmurod o‘g‘li",
+  "affiliation": "Farg‘ona davlat texnika universiteti,\nAxborot texnologiyalari va telekommunikatsiya fakulteti,\nAxborot xavfsizligi yo‘nalishi, O‘zbekiston",
+  "email": "abdulazizrich02@gmail.com",
+  "abstract": "Tezisda kamera tasvirlarini qurilmada qayta ishlovchi FocusLens tizimining arxitekturasi bayon etiladi. OpenCV va MediaPipe yordamida yuz mavjudligi, bosh yo‘nalishi hamda ko‘z ochiqligi baholanadi. Video saqlanmaydi; ixtiyoriy sun’iy intellekt (AI) xizmatiga savol matni va umumlashtirilgan ko‘rsatkichlar yuboriladi. Funksional sinovlar mahalliy tahlil va ma’lumotlarni saqlash mexanizmlarining ishlashini tasdiqladi. Natijalar diqqatni aniqlash aniqligi haqidagi empirik xulosani anglatmaydi.",
+  "keywords": [
+    "maxfiylik",
+    "minimallashtirish",
+    "videokuzatuv",
+    "OpenCV",
+    "MediaPipe",
+    "kalibrlash",
+    "shifrlash"
+  ],
+  "body": [
+    "Kamera asosidagi ish sessiyasi monitoringida foydalanuvchining yuzi bilan birga uning xonasi va atrofidagi shaxslar ham tasvirga tushishi mumkin. Bunday kadrlarni serverga yuborish kuzatuv vazifasi uchun zarur bo‘lmagan axborotni ham uzatadi. Shu sababli diqqatni qo‘llab-quvvatlovchi ilovani loyihalashda qanday belgi hisoblanishi bilan bir qatorda, qaysi ma’lumot saqlanishi va qurilmadan chiqishi ham belgilanishi kerak. NIST Privacy Framework ma’lumotlarga ishlov berish jarayonida maxfiylik xavflarini baholash va ularni kamaytirishni tizim loyihasining tarkibiy qismi sifatida ko‘radi [1].",
+    "Tadqiqotning maqsadi kamera orqali kuzatiladigan holatlarni ish sessiyasi statistikasi bilan bog‘lash va xom tasvirlarning tashqi xizmatlarga uzatilishini cheklaydigan dasturiy arxitekturani ishlab chiqishdir. FocusLens shu maqsadda Windows uchun mustaqil ilova sifatida yaratildi. Ishning amaliy hissasi mahalliy hisoblashni sessiya statistikasi bilan birlashtirish hamda ixtiyoriy AI xizmatiga yuboriladigan ma’lumotlarni cheklashdan iborat. Tizim individual foydalanishga mo‘ljallangan; kuzatuv kamerani foydalanuvchi yoqqanidan keyin boshlanadi.",
+    "Interfeys Next.js va React, ish stoli muhiti Electron asosida qurilgan. Kamera tahlili interfeysdan alohida Web Worker ichida bajariladi. OpenCV.js kadrni kulrang tasvirga o‘tkazadi va yuz sohasining o‘rtacha yorug‘ligini hisoblaydi. Yuzning tayanch nuqtalari, bosh yo‘nalishi hamda ko‘z yumilishiga oid belgilar MediaPipe Face Landmarker orqali olinadi [2, 3]. Yorug‘likni yuz sohasida baholashdan maqsad yorqin fon ta’sirini cheklashdir. Model va hisoblash modullari o‘rnatish paketiga kiritilgani uchun kamera tahlili internetga bog‘liq emas.",
+    "Tahlilga yuboriladigan kadr eni 640 piksel bilan cheklanadi. Yangi kadrni uzatish har 180 millisekundda rejalashtiriladi, biroq oldingi kadrga ishlov tugamasa keyingisi uzatilmaydi. Bu hisoblash navbatining ortib ketishini cheklaydi; amaldagi tezlik qurilma quvvatiga bog‘liq. Kalibrlashda kamida 20 soniyalik yaroqli kuzatuv va 60 ta namuna talab qilinadi. Ulardan boshning odatiy yo‘nalishi va ko‘z ochiqligi uchun boshlang‘ich qiymatlar hisoblanadi. Yetarli namuna olinmasa kalibrlash yakunlanmaydi.",
+    "Holatlar shartli ravishda fokus, qisqa og‘ish yoki noaniq kuzatuv, chalg‘ish va yuz ko‘rinmasligi guruhlariga ajratiladi. Standart sozlamada yuz yo‘qolishi yoki bosh burilishi uch soniya davom etsa, mos ravishda yuz ko‘rinmasligi yoki chalg‘ish holati qayd etiladi. Undan oldingi vaqt qisqa og‘ish sifatida hisoblanadi. Shu bilan oddiy ko‘z pirpirashi va qisqa harakatlarning sessiya statistikasiga ta’siri cheklanadi. Yorug‘lik yetarli bo‘lmagan kuzatuv fokus sifatida qabul qilinmaydi. Bunda yuzning ekranga qaratilgani fikrning vazifaga jamlanganini bevosita isbotlamaydi: tizim faqat tashqi belgilarni baholaydi.",
+    "Sessiya indeksi holatlarning davomiyligini hisobga olgan holda quyidagicha aniqlanadi:",
+    {
+      "equation": true
+    },
+    "Bu yerda T_f — fokus, T_m — qisqa og‘ish yoki noaniq kuzatuv, T_d — chalg‘ish, T_a — yuz ko‘rinmagan vaqt davomiyligi; round natijani butun songa yaxlitlaydi. Maxraj noldan katta bo‘lgan sessiyalar baholanadi, tanaffuslar hisobga kiritilmaydi. Ushbu oraliq holatga berilgan 0,5 vazn loyiha doirasidagi evristik tanlovdir. Shu bois S kognitiv diqqatning tasdiqlangan o‘lchovi yoki ish unumdorligi foizi sifatida talqin qilinmaydi.",
+    "Maxfiylik chorasi ma’lumot hosil bo‘ladigan nuqtadan boshlanadi. Kadrlar tezkor xotirada tahlil qilinadi, so‘ng tasvir obyektlari bo‘shatiladi. IndexedDB bazasiga sessiyalar, holatlarning vaqt intervallari, sozlamalar va kalibrlash qiymatlari yoziladi; fotosurat va video yozilmaydi. Biroq vaqt intervallari ish odatlarini ochib berishi mumkin. Ular anonim ma’lumot deb qaralmaydi va mahalliy bazaga alohida shifrlash joriy etilmagan. Qurilma yoki foydalanuvchi hisobiga kirish huquqini olgan shaxsdan himoyalanish bu yechimning ochiq cheklovidir.",
+    "Electron muhitida interfeysga Node.js imkoniyatlari bevosita berilmaydi, jarayonlar ajratiladi va asosiy jarayonga murojaat manbasi tekshiriladi. DeepSeek yordamchisiga so‘rov faqat foydalanuvchi yuborish amalini bajarganda jo‘natiladi. So‘rov savol matni hamda tanlangan davrning fokus vaqti, chalg‘ishlar soni, sessiyalar soni kabi umumiy ko‘rsatkichlarni qamrab oladi; kamera kadrlari unga qo‘shilmaydi. API kaliti Windows muhitida safeStorage orqali shifrlanadi. Uning DPAPI asosidagi himoyasi ayni foydalanuvchi huquqlari bilan ishlovchi zararli dasturga qarshi to‘liq kafolat bermaydi [4]. Kalitsiz rejimda qoidalarga asoslangan mahalliy tavsiyalar ishlaydi.",
+    "Funksional tekshiruvda 31 ta avtomatik test muvaffaqiyatli bajarildi. Ular taymer hisobini, holat o‘tishlarini, kalibrlashni, statistik agregatsiyani va ma’lumotlarni import qilish chegaralarini qamradi. Yig‘ilgan Windows paketida sun’iy kamera oqimini yoqish, to‘xtatish va qayta ochish, pauzadan davom ettirish, tanaffusga o‘tish hamda ilova qayta ishga tushganda tarixni tiklash tekshirildi. Shuningdek, API kalitining shifrlangan holda saqlanishi va AI so‘rovisiz tashqi tarmoq murojaatlari yo‘qligi tekshirildi. Mahalliy model ochiq foydalanishdagi portret tasvirida yuzni aniqladi, bir xil kulrang kadrlarda esa yuz aniqlanmadi.",
+    "Ushbu natijalar dasturiy mexanizmlarning ishlashiga tegishli. Ishtirokchilar guruhida diqqatni tasniflash aniqligi, o‘qish samaradorligi yoki mehnat unumdorligi o‘lchanmagan. Haqiqiy veb-kamera apparati va DeepSeek bilan jonli so‘rov ham alohida sinovni talab qiladi. Keyingi bosqichda turli yorug‘lik va kamera joylashuvlarida belgilangan ma’lumotlar to‘plami orqali noto‘g‘ri ogohlantirishlar ulushini baholash lozim. Foydalanuvchi roziligi va saqlash muddatini belgilash bunday tajriba protokolining bir qismi bo‘lishi kerak.",
+    "FocusLens misolida kamera tahlili va bulutli maslahat xizmatini alohida axborot oqimlari sifatida tashkil etish amalga oshirildi. Bu yondashuv xom videoni saqlashga ehtiyoj qoldirmasdan sessiya ko‘rsatkichlarini hisoblash imkonini beradi. Mahalliy hisoblash tasvir uzatilishini cheklaydi, biroq saqlangan statistikaga kirishni himoyalash vazifasini bekor qilmaydi. Loyihaning keyingi rivoji lokal bazani shifrlash va kuzatuv belgilarining ishonchliligini tajribada baholash bilan bog‘liq."
+  ],
+  "references": [
+    "1. NIST. NIST Privacy Framework: A Tool for Improving Privacy through Enterprise Risk Management. Version 1.0. 2020. https://doi.org/10.6028/NIST.CSWP.01162020.",
+    "2. Lugaresi C. et al. MediaPipe: A Framework for Building Perception Pipelines. 2019. arXiv:1906.08172. https://doi.org/10.48550/arXiv.1906.08172.",
+    "3. Google AI Edge. Face landmark detection guide for Web. https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker/web_js (murojaat sanasi: 15.10.2026).",
+    "4. Electron. safeStorage. https://www.electronjs.org/docs/latest/api/safe-storage (murojaat sanasi: 15.10.2026)."
+  ]
+}

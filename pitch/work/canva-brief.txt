@@ -1,0 +1,173 @@
+Create an outstanding editable Canva presentation for an Uzbek innovation competition jury. Exactly 20 widescreen 16:9 slides, Uzbek Latin language throughout. Product name FocusSense, based on existing FocusLens prototype. The user supplied an 8-slide FocusLens competition deck, grant application, a 23-slide FocusSense narrative and PDF. These are source content, not a mandatory visual template. The audience judges innovation, social usefulness, feasible business and use of grant funds. Make it persuasive through clarity and credible evidence, not exaggerated claims.
+
+DESIGN: Professional premium startup pitch, serious and striking, not childish or generic. Midnight navy #0B1020, warm white #F4F3EE, restrained turquoise #14B8A6 with occasional muted violet. Alternate dark hero slides and bright editorial slides. Use strong typography (Manrope or similar supporting Uzbek letters), titles 36-44pt, readable body 22-28pt, small citations no less than 12pt. Generous space, strong asymmetrical composition. Native editable charts and tables. Large authentic stock images on 4-5 slides of adults studying/working at laptops and ergonomics. Crop intentionally, never obscure words. Avoid repeated card grids, badges, pill tabs, generic neon robots, fake dashboards or placeholder charts. Use flat editorial layouts with one visual focus per slide. All body text and chart data editable. No made-up logo or invented customer logos. Cover minimally worded. Do not include drafting commentary. Add useful Uzbek presenter notes, about 50-80 words per slide, with sources and explanations. Scientific facts must link to the exact sources provided below. All numbers use Uzbek decimal commas.
+
+CONTENT IN ORDER. Use the titles and concise wording below, edit only for natural Uzbek or to fit. Preserve all qualifications and figures.
+
+1. Title FocusSense
+Subtitle: Diqqat va sog‘lom ish odatlari uchun shaxsiy AI yordamchi
+Author: Xolmurodov Abdulaziz Dilmurod o‘g‘li
+Farg‘ona davlat texnika universiteti
+Small line: “Eng innovatsion g‘oya” tanlovi
+Small note: FocusLens prototipi asosida
+Visual: elegant adult at laptop, calm focused atmosphere. No paragraphs on cover.
+
+2. Title Diqqat bo‘linadi, tanaffus unutiladi
+Hero statistic: 48%
+Text: Xalqaro so‘rovdagi xodimlar ishini tartibsiz va bo‘laklangan deb baholagan.
+Supporting two short lines: Tez-tez uzilish ish ritmini buzadi. Uzoq o‘tirish va kechiktirilgan tanaffus noqulaylikni kuchaytirishi mumkin.
+Small citation: Microsoft Work Trend Index, 2025. 31 ming respondent, 31 bozor.
+Notes: This is a survey about knowledge workers, not a claim about all Uzbekistan workers or proof of FocusSense benefits. Source https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday. For prolonged posture https://www.osha.gov/etools/computer-workstations/work-process.
+
+3. Title Raqamli auditoriya kengaymoqda
+Native editable column chart, percentage axis 0-100:
+2021 76.6; 2022 83.9; 2023 89.0; 2024 93.3; 2025 yan–avg 94.2.
+Chart label: O‘zbekistonda internetdan foydalanuvchi aholi ulushi
+Takeaway: Raqamli o‘qish va ish uchun shaxsiy yordamchi mahsulotlarga imkoniyat bor.
+Visible caveat: Internetdan foydalanish ulushi to‘lovchi mijozlar sonini bildirmaydi.
+Source: Milliy statistika qo‘mitasi, 29.09.2025.
+Notes exact https://stat.uz/uz/matbuot-markazi/qo-mita-yangiliklar/64211. Demand and willingness to pay for this app still require validation. Do not invent CAGR or market size.
+
+4. Title Birinchi mijozlar
+Two audience columns with realistic portraits, no fake customer logos.
+Shaxsiy: Talabalar va mustaqil IT mutaxassislar. Ehtiyoj: o‘qish yoki ishni bo‘linmasdan bajarish, odatlarini tushunish.
+Tashkilot: O‘quv markazlari va kichik jamoalar. Ehtiyoj: tanaffus va uchrashuvlarni qulay rejalash.
+Bottom: Dastlab O‘zbekiston. Keyin rus va ingliz tillaridagi bozorlarni sinash.
+Notes: Target segments, no existing contracts claimed. Team product planned. Individual benefit precedes organizational oversight.
+
+5. Title Foydalanuvchi qanday foyda oladi
+Simple numbered editable journey with no decorative arrow strings:
+1. Vazifani tanlaydi va sessiyani boshlaydi
+2. Qurilma ko‘rinadigan holat belgilarini tahlil qiladi
+3. Foydalanuvchi eslatma va kunlik xulosani oladi
+Example wording: “Tanaffus vaqti keldi. Qisqa yurib kelishni xohlaysizmi?”
+Visible limit: Kamera fikr yoki his-tuyg‘uni o‘qimaydi.
+Notes: Current prototype uses local OpenCV/MediaPipe visible face/head/eye cues, a heuristic index, timer and local history. Avoid claiming true cognitive attention measurement.
+
+6. Title Yangilikning markazi
+Four short lines in spacious editorial composition:
+Kamera tahlili qurilmaning o‘zida
+Shaxsga mos kalibrlash
+Diqqat va ergonomika eslatmalarini birlashtirish
+O‘zbek tilida tushunarli tavsiyalar
+Footer: Ergonomika moduli va to‘liq mahalliylashtirish rivojlanish rejasida.
+Notes: Practical combination and localization are the innovation thesis. Do not claim world-first, patented, unmatched or 100% accurate. Compared with timer-only approaches this adds visible context, while recognition has limitations.
+
+7. Title O‘tirish holati bo‘yicha yordam
+Visible subtitle: Rejalashtirilgan modul
+Main: Kamera bosh va yelka holatidagi uzoq og‘ishni kuzatadi.
+Example: “Holatingizni o‘zgartirib, yelkalarni bo‘shashtirib ko‘ring.”
+Supporting: Shaxsiy kalibrlash. Takroriy signallarni cheklash. Kuzatuv noaniq bo‘lsa ogohlantirmaslik.
+Footer: Ergonomik eslatma. Tibbiy tashxis bermaydi.
+Visual: side-view adult seated at an adjustable desk with visible head/shoulders, tasteful editorial photograph.
+Notes: Planned pose estimation, requires camera angle and lighting testing. No validated posture or injury-prevention claim. OSHA https://www.osha.gov/etools/computer-workstations/work-process and https://www.osha.gov/etools/computer-workstations/positions/.
+
+8. Title Ruhiy zo‘riqishni kamaytirishga qaratilgan
+Text: Rejalashtirilgan tanaffus va muloyim eslatmalar ish yukini boshqarishga yordam berishi mumkin.
+Four simple details: Eslatmani kechiktirish; kuzatuvni istalgan payt o‘chirish; shaxsiy maqsadlar; xodimlarni reyting bilan taqqoslamaslik.
+Visible: Ta’sirini foydalanuvchi sinovida baholaymiz.
+Notes: No proven stress prevention, depression detection, emotional recognition or therapeutic claim. Team design should avoid coercion, individual performance surveillance and use for disciplinary decisions. User controls are product principles.
+
+9. Title Maxfiylik mahsulotga ishonch yaratadi
+Main: Kamera kadrlari qurilmada qayta ishlanadi va video yozilmaydi.
+Two supporting lines: AI yordamchisi ixtiyoriy. Faqat savol va umumiy sessiya ko‘rsatkichlari yuboriladi.
+Jamoa rejasi: rozilik asosidagi guruh xulosalari.
+Footer: Jamoa funksiyasi rejalashtirilgan. Mahalliy statistika himoyasi kuchaytiriladi.
+Notes: Do not claim all local data already encrypted; current IndexedDB is not separately encrypted. API key encryption exists. Team aggregates require access control, retention and sufficient group size. No camera/attention-based advertising and no sale of personal data.
+
+10. Title Tayyor asos va keyingi imkoniyatlar
+Two clearly separated native text columns:
+Mavjud prototip: Windows ilovasi; lokal kamera tahlili; fokus taymeri va statistika; ixtiyoriy AI yordamchisi.
+Keyingi bosqich: ergonomika moduli; telefonni ajratish; pullik tariflar; rozilik asosidagi jamoa hisoboti.
+Small evidence line: 31 avtomatik testdan o‘tgan prototip. Insonlar ishtirokidagi samaradorlik sinovi hali o‘tkazilmagan.
+Notes: Functional verification does not establish cognition detection accuracy. Do not present future features as shipped.
+
+11. Title Daromad modeli
+Editable table with three columns, no UI buttons:
+Bepul | 0 so‘m | Taymer va asosiy kundalik statistika
+Shaxsiy Plus | 49 000 so‘m/oy | Kengaytirilgan tahlil, limitli AI maslahatlari, reklamasiz
+Jamoa | 29 000 so‘m/kishi/oy | Kamida 10 o‘rin, guruh hisoboti va boshqaruv
+Bottom: Taklif etilayotgan tariflar. Narx va to‘lashga tayyorlik pilotda tekshiriladi.
+Notes: These prices are assumptions, not current offers or existing sales. Enterprise/campus custom licensing is a later option. Core local features remain free. Limit AI usage to control variable cost.
+
+12. Title Reklama fokusga xalaqit bermaydi
+Main: Hamkor takliflari faqat sessiya tugagach yoki alohida bo‘limda.
+Examples: O‘quv kurslari; ergonomik jihozlar; foydali raqamli xizmatlar.
+Rules: Aniq “Reklama” belgisi. Kamera holatidan reklama tanlashda foydalanilmaydi. Plus va jamoa tariflari reklamasiz.
+Bottom: Qo‘shimcha tushum: hamkorlik to‘lovi yoki sotuvdan komissiya.
+Notes: Proposed secondary model. No ads during focus/break prompts, no user-data sales. No advertising revenue in base calculations because traffic and partner terms are unvalidated.
+
+13. Title Obunadan oylik tushum ssenariylari
+Native editable comparison chart and concise numeric explanation:
+Boshlang‘ich sinov: 50 Plus × 49 000 + 50 jamoa o‘rni × 29 000 = 3,9 mln so‘m/oy
+O‘sish ssenariysi: 300 Plus × 49 000 + 300 jamoa o‘rni × 29 000 = 23,4 mln so‘m/oy
+Visible footer: Hisobiy ssenariy. Tushum foyda emas. Reklama tushumi kiritilmagan.
+Notes: B2C assumptions 1000 monthly active ×5%=50 and 5000×6%=300. B2B 5 teams×10 seats and 20 teams×15 seats. B2B seats are additional to B2C users to avoid double counting. No claimed current user base or forecast date.
+
+14. Title Bozorga chiqish
+Three sequential stages with readable sparse layout:
+Pilot: FarDTU talabalari va ko‘ngilli IT mutaxassislar
+Dastlabki sotuv: o‘quv markazlari, frilanser hamjamiyatlari, kichik agentliklar
+Kengayish: tavsiya dasturi va tashkilot litsenziyalari
+Bottom: Har bosqichda qayta foydalanish va to‘lovga o‘tish tekshiriladi.
+Notes: Potential channels only, no partnership already signed. Demonstrate value with a short trial before sales. Avoid intrusive ads and acquisition-cost claims without data.
+
+15. Title Foydani qanday tekshiramiz
+Prominent: 100 ko‘ngilli foydalanuvchi
+Design: 6 haftalik pilot. 2 hafta boshlang‘ich kuzatuv, 4 hafta ilova bilan foydalanish.
+Measurements: Noto‘g‘ri eslatmalar; tanaffus odati; subyektiv zo‘riqish; qayta foydalanish; to‘lashga tayyorlik.
+Footer: Rejalashtirilgan sinov. Hali o‘lchangan natijalar yo‘q.
+Notes: This pragmatic pilot estimates feasibility and reported usefulness, not causal clinical efficacy. Voluntary consent, deletion, clear protocol and ergonomics/psychology adviser. Later controlled study for efficacy. Target technical behavior errors rather than ungrounded 92% attention accuracy.
+
+16. Title Olti oylik rivojlanish rejasi
+Native editable timeline, four stages:
+1–2-oy: Kalibrlash va ergonomika prototipi
+3–4-oy: Tariflar, hisob-kitob va xavfsizlik
+5-oy: 100 kishilik pilotni yakunlash
+6-oy: Natijalar, tijorat sinovi va dastur ro‘yxatiga ariza
+Bottom: 6-oy maqsadi: 500 faol foydalanuvchi va dastlabki pullik mijozlar.
+Notes: Pilot preparation/recruitment starts in month4 and six-week pilot ends month5. Target 500 active is not achieved. Program registration is not a patent. Timeline starts with financing, not a claimed calendar commitment.
+
+17. Title Grant mablag‘i
+Hero: 50,65 mln so‘m
+Native editable horizontal bars or table:
+Asosiy uskunalar 31,95
+Materiallar va infratuzilma 4,20
+Akseleratsiya va stajirovka 14,50
+Units: mln so‘m
+Footer: Arizadagi dastlabki smeta. Xarid narxlari va sarflar tanlov qoidalari asosida aniqlashtiriladi.
+Notes: This is the supplied application budget, not verified vendor quotations. Breakdown: laptop22.50 camera2.65 monitor6.80; SSD1.45 hosting/domain1.80 print0.95; acceleration8.00 conference6.50. Total50.65. Founder contributes development time; salary and recurring operation are not fully covered by this capex-oriented grant. Do not claim grant rule eligibility already checked.
+
+18. Title So‘rov va kutilayotgan natija
+Main: 50,65 mln so‘m grant va pilot uchun tashkiliy ko‘mak
+Outcome: Sinovdan o‘tgan shaxsiy yordamchi, dastlabki mijozlar va tekshirilgan biznes modeli
+Founder: Xolmurodov Abdulaziz Dilmurod o‘g‘li
+FarDTU, Axborot xavfsizligi, 1-bosqich magistranti
+Contact: abdulazizrich02@gmail.com
+Notes: Author has built initial prototype. Needed expertise, not current team claims: computer vision, ergonomics/psychology, B2B sales advisers. Partnerships not yet signed. Close with the ask for support to validate human benefit and commercial demand.
+
+19. Title Ilova: xarajat va barqarorlik
+Simple native editable financial calculation:
+Model farazi: o‘zgaruvchan xarajat tushumning 25%; doimiy xarajat 8 mln so‘m/oy.
+Oylik xarajatlarni qoplash nuqtasi: 8 ÷ 0,75 = 10,67 mln so‘m tushum.
+Boshlang‘ich ssenariy: 3,9 × 0,75 − 8 = −5,08 mln so‘m
+O‘sish ssenariysi: 23,4 × 0,75 − 8 = 9,55 mln so‘m
+Footer: Shartli hisob. Soliq va bir martalik investitsiya kiritilmagan.
+Notes: Not net profit projection. 25% bundles AI/cloud, processing and other variable service costs; fixed8m is illustrative operating envelope to test, not quoted salaries. Rework after unit-cost and customer-acquisition data. No promise of profitability.
+
+20. Title Ilova: manbalar va hisoblar
+Clean readable source list, compact but legible:
+Microsoft Work Trend Index, 17.06.2025
+Milliy statistika qo‘mitasi, 29.09.2025
+OSHA Computer Workstations, Work Process and Good Working Positions
+Muallifning tanlov arizasi va FocusLens prototipi sinovlari
+Bottom: Tariflar, foydalanuvchilar soni va daromadlar loyiha farazlari.
+Place full clickable source links in presenter notes and if possible hyperlink source titles. Notes:
+https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday
+https://stat.uz/uz/matbuot-markazi/qo-mita-yangiliklar/64211
+https://www.osha.gov/etools/computer-workstations/work-process
+https://www.osha.gov/etools/computer-workstations/positions/
+Access20.10.2026.
+User documents: Taqdimot.pptx, word.docx, FOCUSSENSE.docx, FOCUSSENSE.pdf. Unsupported productivity improvement percentages, generic claims of complete encryption and exclusive innovation from older materials must not be repeated.
+
+QUALITY: No fake testimonials, real-client claims, 92% accuracy claim, guaranteed mental-health outcome, fictional revenue or total-market estimate. Retain tasteful professional visuals, substantial whitespace and a smooth persuasive narrative. Title/body should not collide. No decorative chart placeholders. Add source citations in notes on relevant slides. Exactly20 slides including these two appendix slides.

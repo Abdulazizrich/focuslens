@@ -1,0 +1,19 @@
+{
+  "reference": "C:\\Users\\Abdulaziz\\Desktop\\axborot xati uzb.2026.docx",
+  "reference_sha256": "25925edb39153484d8d77d637558576fe27e227c8868b021fc7805c7f15ed8e4",
+  "output": "C:\\Users\\Abdulaziz\\Desktop\\focus1\\thesis\\Xolmurodov_Abdulaziz_FocusLens_tezis.docx",
+  "abstract_words": 54,
+  "keywords": 7,
+  "body_words": 730,
+  "all_words": 879,
+  "a4_cm": [
+    21,
+    29.7
+  ],
+  "margins_cm": 2,
+  "font": "Times New Roman",
+  "font_pt": 14,
+  "line_spacing": 1.15,
+  "body_first_line_cm": 1,
+  "note": "Written requirements override the notice example’s incidental 12-point font and page margins."
+}

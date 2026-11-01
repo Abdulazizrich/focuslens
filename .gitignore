@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+release/
+*.tsbuildinfo
+test-results/
+public/vision/
+.env*
+build/*.zip
+.slides-build/
+.slides-theory-build/

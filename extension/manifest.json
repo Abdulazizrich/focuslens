@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "FocusLens — Focus Blocker",
+  "version": "1.0.0",
+  "description": "Block your chosen distracting domains during a focus session. Local only.",
+  "permissions": ["storage", "declarativeNetRequest"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "FocusLens" },
+  "icons": { "192": "icon.png" }
+}
